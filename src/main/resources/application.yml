@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+
+# camunda登录信息配置
+camunda.bpm:
+  admin-user:
+    id: admin  #用户名
+    password: 123456  #密码
+    firstName: Johnson
+  filter:
+    create: All tasks
+
+# mysql连接信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.10.11.117:3306/Camunda721
+    username: camunda
+    password: camunda@20240406
+    type: com.mysql.cj.jdbc.MysqlDataSource
